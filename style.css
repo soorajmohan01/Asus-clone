@@ -1,0 +1,532 @@
+
+body{
+    margin:0;
+}
+.header-top{
+    width: 100%;
+    height: 35px;
+    padding: 0 150px;
+    display: flex;
+    border-bottom: 1px solid;
+    border-color: #d7d3d3;
+    box-sizing: border-box;
+}
+.header-top-logos{
+    width: 50%;
+    height: 35px;
+    margin-top: 5px;
+}
+.header-top-logos img{
+    width: 50px;
+    height: 27px;
+    border-right: 1px solid;
+    border-color: #d7d3d3;
+    padding-right: 20px;
+}
+.header-top-logos #proart{
+    width:85px;
+    padding-left: 20px;
+}
+.header-top-logos #iot{
+    border: 0px;
+    width: 110px;
+    padding-left: 20px;
+}
+.header-top #rog:hover{
+    content: url("https://www.asus.com/media/Odin/images/header/ROG_hover.svg");
+}
+.header-top #proart:hover{
+    content: url("https://www.asus.com/media/Odin/images/header/ProArt_hover.svg");
+}
+.header-top #iot:hover{
+    content: url("https://www.asus.com/media/Odin/images/header/IoT_hover.svg");
+}
+.header-top-gaming{
+    width: 38rem;
+    height: 35px;
+    margin-top: 7px;
+    display: flex;
+    justify-content: right;
+    color: #4e4c4c;
+}
+.header-middle{
+    width: 100%;
+    height: 50px;
+}
+.header-middle #asus{
+    height: 18px;
+    left: 10rem;
+    margin-top: 15px;
+}
+.header-middle #asus:hover{
+    content: url("https://dlcdnimgs.asus.com/images/logo/logo-blue001.svg");
+}
+.dropdown:hover .dropdown-menu { 
+    display: block; 
+} 
+#nav-content{
+    width: 70rem;
+    float: right;
+    height: 50px;
+    top: 1rem;
+    font-size: 0.8rem;
+}
+.navigation-links{
+    color: black;
+}
+.nav-icons{
+    margin-top: 10px;
+}
+.header-icon{
+    display: none;
+}
+.header-bottom{
+    width: 100%;
+    height: 45px;
+    box-sizing: border-box;
+    background-color: #2194ec;
+    display: flex;
+    justify-content: center;
+}
+.header-bottom a{
+    text-decoration: none;
+    color: #fff;
+    margin-top: 10px;
+}
+.header-bottom a:hover{
+    text-decoration: underline;
+}
+.front-section img{
+    width: 100%;
+    height: auto;
+}
+.adobe-section{
+    margin-top: 0.5rem;
+}
+.adobe-section img{
+    width: 100%;
+    height: auto;
+}
+.asus-lap{
+    width: 50%;
+    height: auto;
+    margin-top: 1rem;
+    z-index: 10;
+} 
+.asus-lap .lap{
+    width: 97%;
+    height: auto;
+}
+.name-tag{
+    position: absolute;
+    width: 10rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 25px;
+}
+.name-tag a{
+    font-size: 20px;
+    margin-top: 3.5rem;
+    text-decoration: none;
+    color: #818181;
+    position: absolute;
+}
+.name-tag a::after{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 0%;
+    background-color: #818181;
+    left: 0;
+    bottom: -5px;
+    transition: 0.5s;
+}
+.name-tag a:hover::after{
+    width: 100%;
+}
+.categories{
+    max-width: 100%;
+    height: auto;
+}
+.categories li{
+    list-style: none;
+    width: 100%;
+    padding: 5px;
+}
+.categories li label{
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    font-size: 0.8rem;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+    color: #535353;
+}
+input[type="checkbox"]{
+    display: none;
+}
+
+/*---------------Tablet------------------*/
+
+@media screen and (max-width:992px) {
+    .header-top{
+        display: none;
+    }
+    .header-middle{
+        padding-left:0;
+    }
+    .header-middle #asus{
+        height: 17px;
+        left: 50%;
+        top: 2rem;
+    }
+    #nav-content{
+        width: 50px;
+        margin:0px;
+        float: right;
+        position: absolute;
+    }
+    .sidebar-style{
+        width: 100rem;
+        background-color: #fff;
+    }
+    .menu-icon{
+        position: relative;
+    }
+    .header-icon{
+        display: flex;
+        margin-top: 3rem;
+        float: right;
+    }
+    .header-bottom{
+        width: 100%;
+        height: 3rem;
+        margin-top: 1rem;
+    }
+    .front-section{
+        padding: 0;
+    }
+    .front-section img{
+        content: url("https://www.asus.com/WebsitesBanner/IN/banners/algissdaki3ycuux/algissdaki3ycuux-0_0_tablet_0_2X.jpg?webp");
+        width: 100%;
+        height: auto;
+    }
+    .adobe-section{
+        padding: 0;
+    }
+    .adobe-section img{
+        content: url("https://www.asus.com/WebsitesBanner/IN/banners/foxkkzyesji5rjax/foxkkzyesji5rjax-0_0_tablet_2X.jpg?webp");
+        width: 100%;
+        height: auto;
+    }
+    .asus-lap{
+        float: left;
+        display: flex;
+        justify-content: space-around;
+        overflow: hidden;
+    }
+    .asus-lap .lap{
+        width: 95%;
+        height: auto;
+    }
+    .name-tag{
+        width: 50%;
+        margin-top: 0.5rem;
+        z-index: 1;
+    }
+    .name-tag a{
+        margin-top: 1.5rem;
+    }
+    .asus-lap #oled{
+        content: url("https://www.asus.com/WebsitesBanner/IN/banners/fvhyvd3jp7yxlasi/fvhyvd3jp7yxlasi-0_0_tablet_5_1X.jpg?webp");
+    }
+    .asus-lap #rog{
+        content: url("https://www.asus.com/WebsitesBanner/IN/banners/fvhyvd3jp7yxlasi/fvhyvd3jp7yxlasi-1_0_tablet_4_1X.jpg?webp");
+        position: relative;
+        float: right;
+    }
+    .asus-lap #zenbook{
+        content: url("https://www.asus.com/WebsitesBanner/IN/banners/fvhyvd3jp7yxlasi/fvhyvd3jp7yxlasi-0_0_tablet_0_1X.jpg");
+    }
+    .name-tag #zenbook-tag{
+        content: url("https://www.asus.com/WebsitesBanner/IN/banners/fvhyvd3jp7yxlasi/fvhyvd3jp7yxlasi-0_1_tablet_0_2X.png");
+        width: 70%;
+    }
+    .asus-lap #vivobook{
+        content: url("https://www.asus.com/WebsitesBanner/IN/banners/fvhyvd3jp7yxlasi/fvhyvd3jp7yxlasi-1_0_tablet_1_1X.jpg?webp");
+        position: relative;
+        float: right;
+    }
+    .name-tag #vivobook-tag{
+        content: url("https://www.asus.com/WebsitesBanner/IN/banners/fvhyvd3jp7yxlasi/fvhyvd3jp7yxlasi-1_1_tablet_1_2X.png?webp");
+        width: 70%;
+    }
+    .asus-lap #rog-strix{
+        content: url("https://www.asus.com/WebsitesBanner/IN/banners/fvhyvd3jp7yxlasi/fvhyvd3jp7yxlasi-2_0_tablet_2_1X.jpg?webp");
+    }
+    .name-tag #rog-strix-tag{
+        content: url("https://www.asus.com/WebsitesBanner/IN/banners/fvhyvd3jp7yxlasi/fvhyvd3jp7yxlasi-2_1_tablet_2_1X.png");
+        width: 70%;
+    }
+    .asus-lap #tuf{
+        content: url("https://www.asus.com/WebsitesBanner/IN/banners/fvhyvd3jp7yxlasi/fvhyvd3jp7yxlasi-3_0_tablet_3_1X.jpg?webp");
+        position: relative;
+        float: right;
+    }
+    .name-tag #tuf-tag{
+        content: url("https://www.asus.com/WebsitesBanner/IN/banners/fvhyvd3jp7yxlasi/fvhyvd3jp7yxlasi-3_1_tablet_3_1X.png");
+        width: 70%;
+    }
+    .categories{
+        max-width: 100%;
+        width: 100%;
+    }
+    .categories li label{
+        padding: 0.1rem;
+        font-size: 0.9rem;
+        background-color: #e1e0e0;
+    }
+    label::after{
+        content: '>';
+        font-size: 1rem;
+        position: absolute;
+        right: 0.1rem;
+        transition: transform 0.5s;
+    }
+    .categories .content{
+        text-align: left;
+        max-height: 0;
+        padding: 0;
+        overflow: hidden;
+        transition: max-height 0.5s, padding 0.5s;
+    }
+    .categories input[type="checkbox"]:checked + label + .content{
+        max-height: fit-content;
+        padding: 1rem 1rem;
+    }
+    .categories input[type="checkbox"]:checked + label::after{
+        transform: rotate(90deg);
+    }
+    .categories p{
+        margin: 0;
+        font-size: 0.8rem;
+        font-weight: 0;
+    }
+    .categories a{
+        text-decoration: none;
+        color: black;
+    }
+
+}
+
+/*------------Mobile----------------*/
+
+@media screen and (max-width:532px){
+    .header-bottom{
+        font-size: 0.5rem;
+        width: 100%;
+        height: 2rem;
+        margin-top: 1rem;
+    }
+    .front-section img{
+        content: url("https://www.asus.com/WebsitesBanner/IN/banners/algissdaki3ycuux/algissdaki3ycuux-0_0_mobile_0_2X.jpg?webp");
+        width: 100%;
+        height: auto;
+    }
+    .adobe-section img{
+        content: url("https://www.asus.com/WebsitesBanner/IN/banners/foxkkzyesji5rjax/foxkkzyesji5rjax-0_0_mobile_2X.jpg?webp");
+        width: 100%;
+        height: auto;
+    }
+    .asus-lap{
+        width: 100%;
+        padding: 0;
+    }
+    .asus-lap .lap{
+        width: 100%;
+        height: auto;
+    }
+    .name-tag{
+        width: 75%;
+    }
+    .asus-lap #oled{
+        content: url("https://www.asus.com/WebsitesBanner/IN/banners/fvhyvd3jp7yxlasi/fvhyvd3jp7yxlasi-0_0_mobile_5_1X.jpg?webp");
+    }
+    .asus-lap #rog{
+        content: url("https://www.asus.com/WebsitesBanner/IN/banners/fvhyvd3jp7yxlasi/fvhyvd3jp7yxlasi-1_0_mobile_4_1X.jpg?webp");
+    }
+    .asus-lap #zenbook{
+        content: url("https://www.asus.com/WebsitesBanner/IN/banners/fvhyvd3jp7yxlasi/fvhyvd3jp7yxlasi-0_0_mobile_0_2X.jpg");
+    }
+    .name-tag #zenbook-tag{
+        content: url("https://www.asus.com/WebsitesBanner/IN/banners/fvhyvd3jp7yxlasi/fvhyvd3jp7yxlasi-0_1_mobile_0_2X.png");
+    }
+    .asus-lap #vivobook{
+        content: url("https://www.asus.com/WebsitesBanner/IN/banners/fvhyvd3jp7yxlasi/fvhyvd3jp7yxlasi-1_0_mobile_1_2X.jpg?webp");
+    }
+    .name-tag #vivobook-tag{
+        content: url("https://www.asus.com/WebsitesBanner/IN/banners/fvhyvd3jp7yxlasi/fvhyvd3jp7yxlasi-1_1_mobile_1_2X.png?webp");
+    }
+    .asus-lap #rog-strix{
+        content: url("https://www.asus.com/WebsitesBanner/IN/banners/fvhyvd3jp7yxlasi/fvhyvd3jp7yxlasi-2_0_mobile_2_2X.jpg?webp");
+    }
+    .name-tag #rog-strix-tag{
+        content: url("https://www.asus.com/WebsitesBanner/IN/banners/fvhyvd3jp7yxlasi/fvhyvd3jp7yxlasi-2_1_mobile_2_1X.png");
+    }
+    .asus-lap #tuf{
+        content: url("https://www.asus.com/WebsitesBanner/IN/banners/fvhyvd3jp7yxlasi/fvhyvd3jp7yxlasi-3_0_mobile_3_2X.jpg?webp");
+    }
+    .name-tag #tuf-tag{
+        content: url("https://www.asus.com/WebsitesBanner/IN/banners/fvhyvd3jp7yxlasi/fvhyvd3jp7yxlasi-3_1_mobile_3_1X.png");
+    }
+    .footer-hr{
+        margin-bottom: 0.5rem;
+    }
+    .categories{
+        max-width: 80%;
+        width: 80%;
+    }
+    .categories li label{
+        padding: 0.1rem;
+        font-size: 0.6rem;
+        background-color: #e1e0e0;
+    }
+    label::after{
+        content: '>';
+        font-size: 1rem;
+        position: absolute;
+        right: 0.1rem;
+        transition: transform 0.5s;
+    }
+    .categories .content{
+        text-align: left;
+        max-height: 0;
+        padding: 0;
+        overflow: hidden;
+        transition: max-height 0.5s, padding 0.5s;
+    }
+    .categories input[type="checkbox"]:checked + label + .content{
+        max-height: fit-content;
+        padding: 1rem 1rem;
+    }
+    .categories input[type="checkbox"]:checked + label::after{
+        transform: rotate(90deg);
+    }
+    .categories p{
+        margin: 0;
+        font-size: 0.5rem;
+        font-weight: 0;
+    }
+    .categories a{
+        text-decoration: none;
+        color: black;
+    }
+    
+}
+
+@media screen and (min-width:992px) and (max-width:1105px){
+    .header-middle{
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .header-middle #asus{
+        height: 17px;
+        top: 3.5rem;
+    }
+    #nav-content{
+        font-size: 1.1vw;
+        padding-left: 12rem;
+    }
+    .header-icon-original{
+        display: none;
+    }
+    .header-icon{
+        display: flex;
+        margin-top: 2rem;
+        float: right;
+        margin-right: 0.5rem;
+    }
+    .business{
+        font-size: 0.54rem;
+    }
+    .header-bottom{
+        width: 100%;
+        height: 3rem;
+        margin-top: 1rem;
+    }
+}
+@media screen and (min-width:992px){
+    .asus-lap{
+        float: left;
+        display: flex;
+        justify-content: space-around;
+        overflow: hidden;
+    }
+    .name-tag{
+        width: 30%;
+        margin-top: 0rem;
+    }
+    .name-tag a{
+        margin-top: 2.5rem;
+    }
+    .categories{
+        padding-top: 1rem;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        background-color: #bcb8b8;
+    }
+    .categories li label{
+        padding: 0.1rem;
+        font-size: 1.5rem;
+    }
+    .categories .content{
+        text-align: left;
+        max-height: fit-content;
+        padding: 1rem 1rem;
+        overflow: hidden;
+    }
+    .categories a{
+        text-decoration: none;
+        color: black;
+    }
+
+}
+/*-----------------Desktop---------------*/
+
+@media screen and (min-width:1106px){
+    .header-icon{
+        display: none;
+    }
+    #nav-content{
+        width: 60rem;
+        float: right;
+        height: 50px;
+        top: 1rem;
+        font-size: 0.8rem;
+    }
+    .header-middle #asus{
+        height: 17px;
+        top: 3.5rem;
+        left: 6rem;
+    }
+    .header-bottom{
+        width: 100%;
+        height: 3rem;
+        margin-top: 1rem;
+    }
+    .header-top-gaming{
+        width: 50rem;
+    }
+    .name-tag{
+        width: 30%;
+        margin-top: 0rem;
+    }
+    .name-tag a{
+        margin-top: 3rem;
+    }
+}
+
